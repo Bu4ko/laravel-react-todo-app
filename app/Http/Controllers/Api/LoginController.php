@@ -22,7 +22,7 @@ class LoginController extends BaseController
             return response()->json([
                 'message' => 'Invalid credentials',
                 'errors' => $validator->errors(),
-            ]);
+            ], 401);
         }
 
         $user = $userRepository->findUserByEmail($request->email);

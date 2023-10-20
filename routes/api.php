@@ -36,5 +36,5 @@ Route::group(['middleware' => 'auth:sanctum'], function () {
 
     Route::post('list/{listId}/item', [TodoListItemController::class, 'createListItem']);
     Route::post('list-item/{listItemId}/set-status', [TodoListItemController::class, 'setListItemStatus']);
-    Route::delete('list-item/{listItemId}/delete', [TodoListItemController::class, 'deleteListItem']);
+    Route::delete('list-item/{listItemId}', [TodoListItemController::class, 'deleteListItem']);
 });
