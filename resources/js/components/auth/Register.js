@@ -108,7 +108,7 @@ const Register = () => {
                                     Repeat password
                                 </Label>
                                 <Input
-                                    type="repeatPassword"
+                                    type="password"
                                     id="repeatPassword"
                                     name="repeatPassword"
                                     value={repeatPassword}
